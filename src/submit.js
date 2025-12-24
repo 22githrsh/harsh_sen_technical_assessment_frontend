@@ -13,7 +13,7 @@ export const SubmitButton = () => {
     try {
       setLoading(true);
 
-      const res = await fetch("http://localhost:8000/pipelines/parse", {
+      const res = await fetch("https://harsh-sen-technical-assessment-backend-1.onrender.com/pipelines/parse", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ nodes, edges }),
